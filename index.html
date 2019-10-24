@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Control de asistencia ONLINE</title>
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="57">
+    <!--se utiliza para utilizar la opcion para conocer la ubicacion del scrol del usuario y que se iluminen los links superiores de la pagina al moverse desde la pagina-->
+    <!--Header-->
+    <nav
+      id="header"
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/UMG.ico" alt="Logo de la pagina" />
+          Control de Asistencia
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <!--colocar active para iluminar las palabras-->
+              <a class="nav-link" href="#main">Asignaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#speakers">Asistencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#place-time">Verificar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#conviertete-en-orador">Orador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-resaltar" href="#" data-toggle="modal" data-target="#modalCompra">Horarios</a>
+              <!--Modal data-toggle="modal" data-target="#modalCompra"-->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/Header-->
+    <!--Main-->
+    <main id="main">
+      <div
+        id="carousel"
+        class="carousel slide carousel-fade"
+        data-ride="carousel"
+        data-pause="false"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Gal.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="img/Harley.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="img/Super Girl.jpg" class="d-block w-100" alt="..." />
+            <!--se coloca el url de la direccion donde estan guardadas las imagnes para que aparezcan en el carousel-->
+          </div>
+          <div class="overlay">
+            <!--el overlay realiza con el css un obscurecimiento de la patanlla y coloca el texto que se muestra encima de las fotos-->
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-6 offset-md-6 text-center text-md-right">
+                  <!--col-md-6 se utiliza para que la pantallas medianas y si se desea colocar el texto a la izquida cuando esta en md se coloca offset para que lo cambie automaticamente-->
+                  <h1>Control de Asistencia</h1>
+                  <p class="d-none d-md-block">
+                    En esta pagina podras asignarte, modificar y borrar clases
+                    que no se adecuen a tu horario
+                  </p>
+                  <!--en la etiqueta p se coloca la clase la cual realiza que cuando este en una pantalla penquenia borre el texto y cuando vuelva a medianos aparezca de nuevo -->
+                  <a href="#" class="btn btn-outline-light" data-toogle="modal">Link a otra pagina</a>
+                  <button type="button" class="btn btn-platzi" data-toggle="modal" data-target="#modalCompra">Boton</button>
+                  <!--crea un enlace y un boton para comprar tickets-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--/Main-->
+    <!--Cards-->
+    <section id="speakers" class="mt-4">
+      <!--mt es para darle un espacio de 4 para abajocontra la seccion main el mb-4 para dejar espacio hacia arriba para el footer-->
+      <div class="container">
+        <div class="row">
+          <div class="col text-center text-uppercase">
+            <small>Conoce a los</small>
+            <h2>Oradores</h2>
+            <!--class="h6" colocar esto para convertir en h6 pero sigue siendo un subtitulo-->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img src="img/tenor.gif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="badge">
+                  <span class="badge badge-warning">JavaScript</span>
+                  <span class="badge badge-info">React</span>
+                </div>
+                <h5 class="card-title">Gal Gadot</h5>
+                <p class="card-text">
+                  Es de las principales obras de arte del mundo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img src="img/tenor.gif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="badge">
+                  <span class="badge badge-warning">JavaScript</span>
+                  <span class="badge badge-info">React</span>
+                </div>
+                <h5 class="card-title">Gal Gadot</h5>
+                <p class="card-text">
+                  Es de las principales obras de arte del mundo
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img src="img/tenor.gif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="badge">
+                  <span class="badge badge-warning">JavaScript</span>
+                  <span class="badge badge-info">React</span>
+                </div>
+                <h5 class="card-title">Gal Gadot</h5>
+                <p class="card-text">
+                  Es de las principales obras de arte del mundo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Cards-->
+    <!--Lugar y fecha-->
+    <section id="place-time">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 pl-0 pr-0">
+            <!--Con esto se quita los topes o padding de las imagenes-->
+            <img src="img/Tracer.png" alt="Tracer" />
+          </div>
+          <div class="col-12 col-lg-6 pt-4 pb-4">
+            <!--pb al terminar la card colocarle espacio abajo-->
+            <h2>Tracer del Juego Overwatch</h2>
+            <!--class="mt-2"que tenga un margen iferior con la parte de arriba-->
+            <p>
+              Overwatch pone a los jugadores en equipos de seis personas, con
+              cada persona escogiendo uno de varios héroes disponibles, cada uno
+              con movimientos y habilidades únicas. Los héroes están divididos
+              en tres clases: Daño, Tanque y Apoyo. Los jugadores de cada equipo
+              trabajan juntos para atacar y defender puntos de control o para
+              atacar/defender "cargas" (objetivos móviles que se mueven
+              alrededor del mapa). Al terminar la partida los jugadores acumulan
+              puntos, que les otorgan recompensas estéticas que no afectan el
+              desempeño de juego.
+            </p>
+            <a
+              class="btn btn-outline-light"
+              href="https://es.wikipedia.org/wiki/Overwatch"
+              >Conoce mas</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Lugar y fecha-->
+    <!--Conviertete en Orador-->
+    <section id="conviertete-en-orador" class="pt-3 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col class= text-uppercase text-center">
+            <small>Conviertete en un orador</small>
+            <h2>Orador</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            Anotate como Orador!
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12 col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Nombre"
+                  />
+                </div>
+                <div class="form-group col-12 col-md-6">
+                  <!--form-group para diferenciar los campos de ingreso de datos y que tenga espacio entre ellos-->
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Apellido"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col">
+                  <textarea
+                    name="text"
+                    class="form-control form-control-lg"
+                    placeholder="Sobre que quieres hablar"
+                  ></textarea>
+                  <small class="form-text text-muted">
+                    Recuerda inculir un titulo para tu charla
+                    <p>
+                      <abbr data-toggle="tooltip" title="Charlas de 5 minutos"
+                        >ignite</abbr
+                      >
+                    </p>
+                  </small>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <button type="button" class="btn btn-platzi btn-block">
+                    Enviar
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Conviertete en Orador-->
+    <!-- footer-->
+    <footer id="footer" class="pb-4 pt-4">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 col-lg">
+            <a href="#">Preguntas Frecuentes</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Contactanos</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Prensa</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Terminos y condiciones</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Privacidad</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Estudiantes</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer-->
+    <!---Modal-->
+<div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Comprar tickets</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-row">
+            <div class="form-group col">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+            </div>
+          </div>
+        </form>
+        <div class="alert alert-warning" role="alert">
+           Recibiras un correo de confirmacion si sales sorteado
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-platzi">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--/Modal-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
